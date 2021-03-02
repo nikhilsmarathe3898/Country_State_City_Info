@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Categories">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_back">
+
+                <LinearLayout
+                    android:id="@+id/llCountry"
+                    android:onClick="ll_Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_back"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Country"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Select Country"
+                        android:textColor="#ff0000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/main_back">
+
+                <LinearLayout
+                    android:onClick="ll_State"
+                    android:id="@+id/llState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_back"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="State"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Select State"
+                        android:textColor="#ff0000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/main_back">
+
+                <LinearLayout
+                    android:onClick="ll_City"
+                    android:id="@+id/llCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_back"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="City"
+                        android:fontFamily="cursive"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Select City"
+                        android:textColor="#ff0000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="invisible">
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="@color/colorPrimary"
+                    android:shadowRadius="100"
+                    android:text="SUBMIT"/>
+
+
+                <Button
+                    android:id="@+id/btnViewData"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="View Data"
+                    android:backgroundTint="#FF6200EE"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="@color/colorPrimary"
+                    android:shadowRadius="100"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStoredData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

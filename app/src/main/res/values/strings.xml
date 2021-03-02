@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Country_State_City_Info</string>
+    <string-array name="countries">
+        <item name="India" />
+        <item name="Afghanistan" />
+        <item name="Pakistan" />
+        <item name="London" />
+        <item name="Andorra" />
+        <item name="Canada" />
+        <item name="China" />
+        <item name="Egypt" />
+        <item name="Japan" />
+        <item name="Kuwait" />
+        <item name="Malaysia" />
+        <item name="Monaco" />
+    </string-array>
+
+    <string-array name="State">
+
+        <item name="Maharashtra" />
+        <item name="Gujarat" />
+        <item name="Goa" />
+        <item name="Himachal Pradesh" />
+        <item name="Haryana" />
+        <item name="Bihar" />
+        <item name="Rajasthan" />
+        <item name="Nagaland" />
+        <item name="Tamil Nadu" />
+        <item name="Tripura" />
+        <item name="Uttar Pradesh" />
+        <item name="Uttarakhand" />
+        <item name="Mizoram" />
+        <item name="Meghalaya" />
+        <item name="Manipur" />
+        <item name="Punjab" />
+        <item name="Kerala" />
+        <item name="West Bengal" />
+        <item name="Karnataka" />
+
+    </string-array>
+
+    <string-array name="City">
+        <item name="Ahmedabad" />
+        <item name="Surat" />
+        <item name="Vadodara" />
+        <item name="Rajkot" />
+        <item name="Gandhinagar" />
+        <item name="Pune" />
+        <item name="Nagpur" />
+        <item name="Nashik" />
+        <item name="Thane" />
+        <item name="Bhavnagar" />
+        <item name="Mumbai" />
+        <item name="Jamnagar" />
+        <item name="Aurangabad" />
+        <item name="Junagadh" />
+        <item name="Solapur" />
+        <item name="Sangli " />
+        <item name="Nanded" />
+        <item name="Dhule" />
+
+    </string-array>
+</resources>
